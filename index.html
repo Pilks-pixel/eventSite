@@ -4,37 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Event Site</title>
+  <script src="demo.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="demo.js" defer></script>
+    
 </head>
 <body>
     <header>
-        <nav>
+      <div class="container">
+        
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#sec1">Section 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#sec2">Section  2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#sec3">Section  3</a>
+                </li>
+            </ul>
+            
+        </div>
+      
+<!--       Pete's nav bar -->
+<!--         <nav>
             <ul>
                 <li><a href="#">Para1</a></li>
                 <li><a href="#">Para2</a></li>
                 <li><a href="#">Para3</a></li>
 
-              </ul>
+              </ul> 
 
-        </nav>
+        </nav>-->
     </header>
     <main>
-    <div id="first" onclick="greet()" onmouseout="out()">
-        <h1>Words</h1>
+      <div class="tab-content container">
+         <div id="first" onclick="greet()" onmouseout="out()">
+          <h1>Words</h1>
+        </div>  
+      
+        <div onmouseover="textChange('Greetings')" onmouseout="textBack('Hello World')"><h2 id="text-change">Hello World</h2></div>
+
+        <div id="sec1" class="container tab-pane active">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+
+        <div id="sec2" class="container tab-pane">
+            <p>sdjnlvckjnv Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div> 
+
+        <div id="sec3" class="container tab-pane">
+        <p>bclk fjknonjdefnv Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
     </div>
-    <h2></h2>
-    <p>Para1</p>
-    <p>Para2</p>
-    <p>Para3</p>
+    
     
 </main>
     <footer></footer>
-    <script>
-        
-        
-        
-    </script>
+    
+
+    
+
+
+
+
+
 </body>
 </html>

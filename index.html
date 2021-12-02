@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="demo.js" defer></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Event Site</title>
+  <script src="demo.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Event Site</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
-        <div class="container">
+      <div class="container">
         
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
@@ -28,9 +31,24 @@
             </ul>
             
         </div>
+      
+<!--       Pete's nav bar -->
+<!--         <nav>
+            <ul>
+                <li><a href="#">Para1</a></li>
+                <li><a href="#">Para2</a></li>
+                <li><a href="#">Para3</a></li>
+
+              </ul> 
+
+        </nav>-->
     </header>
-    <div class="tab-content container">
-        <h1></h1>
+    <main>
+      <div class="tab-content container">
+         <div id="first" onclick="greet()" onmouseout="out()">
+          <h1>Words</h1>
+        </div>  
+      
         <div onmouseover="textChange('Greetings')" onmouseout="textBack('Hello World')"><h2 id="text-change">Hello World</h2></div>
 
         <div id="sec1" class="container tab-pane active">
@@ -47,10 +65,12 @@
     </div>
     
     
-    
-    
-    
+</main>
     <footer></footer>
+    
+
+    
+
 
 
 
